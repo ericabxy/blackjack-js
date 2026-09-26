@@ -7,13 +7,13 @@ const testBall = new Ball(50, 100, 4, 4, 'blue', 10);
 const balls = [];
 
 while (balls.length < 25) {
-  const size = random(10, 20);
+  const size = Math.random(10, 20);
   const ball = new Ball(
-    random(0 + size, width - size),
-    random(0 + size, height - size),
-    random(-7, 7),
-    random(-7, 7),
-    randomRGB(),
+    Math.random(0 + size, width - size),
+    Math.random(0 + size, height - size),
+    Math.random(-7, 7),
+    Math.random(-7, 7),
+    Math.randomRGB(),
     size,
   );
 
