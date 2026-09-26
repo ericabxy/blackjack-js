@@ -15,7 +15,7 @@ class Ball {
     ctx.fill();
   }
 
-  update () {
+  update (width, height) {
     if (this.x + this.size >= width) {
       this.velX = -this.velX;
     }
