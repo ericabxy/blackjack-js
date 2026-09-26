@@ -28,7 +28,7 @@ function loop() {
 
   for (const ball of balls) {
     ball.draw(ctx);
-    ball.update();
+    ball.update(width, height);
   }
 
   requestAnimationFrame(loop);
