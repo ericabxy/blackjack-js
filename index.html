@@ -37,7 +37,30 @@
         <li>Four</li>
       </ol>
     </li>
-    <canvas class="three columns" id="myCanvas" width="480" height="320"/>
   </ol>
+  <canvas class="three columns" id="myCanvas" width="480" height="320"/>
+  <script>
+    import Ball from './js/Ball.js';
+
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+    
+    const testBall = new Ball(50, 100, 4, 4, 'blue', 10);
+    const balls = [];
+
+    while (balls.length < 25) {
+      const size = random(10, 20);
+      const ball = new Ball(
+        random(0 + size, width - size),
+        random(0 + size, height - size),
+        random(-7, 7),
+        random(-7, 7),
+        randomRGB(),
+        size,
+      );
+  
+      balls.push(ball);
+    }
+  </script>
 </body>
 </html>
