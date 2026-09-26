@@ -36,3 +36,5 @@ class Ball {
     this.y += this.velY;
   }
 }
+
+export default Ball;
