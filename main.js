@@ -2,6 +2,8 @@ import Ball from './js/Ball.js';
 
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
+const width = (canvas.width = window.innerWidth);
+const height = (canvas.height = window.innerHeight);
 
 const testBall = new Ball(50, 100, 4, 4, 'blue', 10);
 const balls = [];
